@@ -1,0 +1,54 @@
+{
+  "workflowApiVersion": "1.1",
+  "metaData": {
+    "icon": "https://www.example.com/icon.png",
+    "category": "message"
+  },
+  "type": "REST",
+  "lang": {
+    "en-US": {
+      "name": "Test Custom Activity",
+      "description": "This is a test version for local UI testing"
+    }
+  },
+  "arguments": {
+    "execute": {
+      "url": "https://64773952f6a0.ngrok-free.app/execute",
+      "verb": "POST",
+      "body": "",
+      "header": "",
+      "format": "json",
+      "timeout": 10000,
+      "retryCount": 3,
+      "retryDelay": 1000
+    }
+  },
+  "configurationArguments": {
+    "applicationExtensionKey": "custom-activity-test",
+    "save": {
+      "url": "https://64773952f6a0.ngrok-free.app/save"
+    },
+    "publish": {
+      "url": "https://64773952f6a0.ngrok-free.app/publish"
+    },
+    "validate": {
+      "url": "https://64773952f6a0.ngrok-free.app/validate"
+    },
+    "stop": {
+      "url": "https://64773952f6a0.ngrok-free.app/stop"
+    }
+  },
+  "userInterfaces": {
+    "configModal": {
+      "url": "https://your-ngrok-url.ngrok.io"
+    }
+  },
+  "schema": {
+    "arguments": {
+      "execute": {
+        "inArguments": [],
+        "outArguments": []
+      }
+    }
+  }
+}
