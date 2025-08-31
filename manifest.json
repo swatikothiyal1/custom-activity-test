@@ -11,6 +11,7 @@
       "description": "This is a test version for local UI testing"
     }
   },
+  "isVisibleInPalette": true,
   "arguments": {
     "execute": {
       "url": "https://64773952f6a0.ngrok-free.app/execute",
@@ -43,6 +44,13 @@
       "url": "https://your-ngrok-url.ngrok.io"
     }
   },
+  "wizardSteps": [
+    {
+      "label": "Configuration",
+      "key": "configuration",
+      "active": true
+    }
+  ],
   "schema": {
     "arguments": {
       "execute": {
